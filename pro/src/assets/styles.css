@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif; /* اسم الخط */
+  }
+  
+  body {
+    background-color: #fcfcfc;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 1em;
+    font-size: 2.2rem;
+    color: #D35400; /* برتقالي غامق */
+    letter-spacing: 2px;
+  }
+  
+  h2,
+  h3 {
+    color: #444;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+  }
+  
+  .products-container {
+    width: 100%;
+    max-width: 55em;
+    margin: auto;
+    padding: 2em;
+  }
+  
+  .cart-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 80em;
+  }
+  
+  .products,
+  .cart {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+  
+  .products > div {
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 220px; 
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  .products > div:hover {
+    transform: translateY(-3px);
+  }
+  
+  .products > div img {
+    max-width: 150px;
+    margin-bottom: 1em;
+  }
+  
+  .products > div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .products > div p {
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .products > div button.add-to-cart {
+    background-color: #e74c3c; 
+    color: #fff;
+    border: none;
+    padding: 0.75em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .products > div button.add-to-cart:hover {
+    background-color: #c0392b;
+  }
+  
+  .cart > div {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1.5em;
+    width: 220px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  
+  .cart > div p {
+    margin-bottom: 0.6em;
+    color: #444;
+  }
+  
+  .cart > div button {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    margin: 0 0.2em;
+    border-radius: 4px;
+    padding: 0.4em 0.7em;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .cart > div button:hover {
+    background: #BDC3C7;
+  }
+  
+  .checkout-container {
+    max-width: 300px;
+    padding: 2em;
+    background: #f2f2f2;
+    border-radius: 8px;
+    margin: 2em 0;
+  }
+  
+  .checkout {
+    margin-bottom: 4em;
+  }
+  
+  .cart-total {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  }
+  
+  .cart-total p {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  form {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+  }
+  
+  .received {
+    font-size: 1rem;
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 95%;
+    margin-bottom: 0.8em;
+  }
+  
+  button.pay {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button.pay:hover {
+    background-color: #2471A3;
+  }
+  
+  .pay-summary {
+    background-color: #fff;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  }
+  .pay-summary p {
+    margin-bottom: 0.6em;
+    color: #333;
+  }
+  
+  .empty-btn {
+    margin-top: 1em;
+  }
+  .empty-btn .empty {
+    background-color: #8e44ad; 
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .empty-btn .empty:hover {
+    background-color: #6d3394;
+  }
+  
+  .currency-selector {
+    text-align: right;
+    margin-right: 2em;
+  }
+  .currency-select {
+    font-size: 1rem;
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-top: 2em;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    margin-top: 0.5em;
+  }
+  
