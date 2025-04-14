@@ -1,3 +1,14 @@
+/* ====================================
+   styles.css (مثال على تصميم جديد)
+==================================== */
+
+/* استيراد خط عربي (مثال: Tajawal) من Google Fonts
+   (إذا لم تضف هذا الرابط في الــindex.html) */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+*/
+
+/* إعادة ضبط بسيطة لتوحيد الأسلوب الافتراضي */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +16,13 @@
     font-family: 'Tajawal', sans-serif; /* اسم الخط */
   }
   
+  /* خلفية عامة */
   body {
     background-color: #fcfcfc;
     color: #333;
   }
   
+  /* عنوان المتجر */
   h1 {
     text-align: center;
     padding: 1em;
@@ -18,6 +31,7 @@
     letter-spacing: 2px;
   }
   
+  /* عناوين أخرى */
   h2,
   h3 {
     color: #444;
@@ -25,6 +39,7 @@
     letter-spacing: 1px;
   }
   
+  /* الأقسام */
   .products-container {
     width: 100%;
     max-width: 55em;
@@ -46,13 +61,14 @@
     margin-top: 1em;
   }
   
+  /* بطاقات المنتجات */
   .products > div {
     background: #f9f9f9;
     border-radius: 8px;
     margin: 1em;
     padding: 1.5em;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 220px; 
+    width: 220px; /* عرض ثابت للبطاقة */
     text-align: center;
     transition: transform 0.2s ease;
   }
@@ -70,6 +86,7 @@
     margin-bottom: 0.5em;
   }
   
+  /* تنسيق السعر وزر إضافة المنتج */
   .products > div p {
     margin-bottom: 1em;
     font-weight: 600;
@@ -89,6 +106,7 @@
     background-color: #c0392b;
   }
   
+  /* سلة التسوق */
   .cart > div {
     background: #ffffff;
     border: 1px solid #ccc;
@@ -99,6 +117,7 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
   
+  /* عرض تفاصيل السلّة */
   .cart > div p {
     margin-bottom: 0.6em;
     color: #444;
@@ -117,6 +136,7 @@
     background: #BDC3C7;
   }
   
+  /* الحاوية الجانبية (الدفع) */
   .checkout-container {
     max-width: 300px;
     padding: 2em;
@@ -143,6 +163,7 @@
     font-weight: bold;
   }
   
+  /* حقل الدفع */
   form {
     margin-top: 1em;
   }
@@ -187,6 +208,7 @@
     color: #333;
   }
   
+  /* زر تفريغ السلّة */
   .empty-btn {
     margin-top: 1em;
   }
@@ -203,6 +225,7 @@
     background-color: #6d3394;
   }
   
+  /* محدّد العملة */
   .currency-selector {
     text-align: right;
     margin-right: 2em;
@@ -217,6 +240,7 @@
     cursor: pointer;
   }
   
+  /* تنسيق للعناوين الثانوية */
   h2 {
     margin-top: 2em;
     font-size: 1.4rem;
@@ -224,6 +248,7 @@
     text-transform: uppercase;
   }
   
+  /* تباعد بسيط */
   h3 {
     margin-top: 0.5em;
   }
